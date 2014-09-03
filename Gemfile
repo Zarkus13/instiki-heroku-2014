@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 ruby '1.9.3'
+gem 'unicorn'
 gem "itextomml", ">=1.5.1"
 gem "rack", ">=1.1.3"
 gem "rubyzip", '~> 0.9.9'
