@@ -5,7 +5,7 @@
 4. bundle install
 5. git add .
 6. git commit -m "first push"
-7. push heroku master
+7. git push heroku master
 8. Now you need to visit heroku.com and login
    There under apps/your-in-step-3-created-app you will find the Add-ons section
    Here you will see something like Heroku Postgres :: NAME 
@@ -15,11 +15,11 @@
    Now on your local directory (the one we pulled in step 1) change to 
    config/environments and open production.rb
    Change ENV["HEROKU_POSTGRESQL_SILVER_URL"] ? Logger.new(STDOUT) to
-   ENV["HEROKU_POSTGRESQL_"THE-NAME-YOU-COPYED-FROM-HEROKU.COM"_URL"] ? 
+   ENV["HEROKU_POSTGRESQL_"THE-NAME-YOU-COPYED-FROM-HEROKU.COM-IN-CAPITAL-LETTERS"_URL"] ? 
    Logger.new(STDOUT) : and save the file
 9. git add .
 10.git commit -m "new production.rb"
-11.push heroku master
+11.git push heroku master
 12.heroku run RAILS_ENV="production" rake db:migrate
 
 
