@@ -18,7 +18,7 @@
    ENV["HEROKU_POSTGRESQL_"THE-NAME-YOU-COPYED-FROM-HEROKU.COM"_URL"] ? 
    Logger.new(STDOUT) : and save the file
 9. git add .
-10. git commit -m "new production.rb"
+10.git commit -m "new production.rb"
 11.push heroku master
 12.heroku run RAILS_ENV="production" rake db:migrate
 

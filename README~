@@ -2,11 +2,11 @@
 1. git clone https://github.com/Stesu/Instiki-Heroku-2014.git
 2. cd Instiki-Heroku-2014
 3. heroku create
-3. bundle install
-4. git add .
-5. git commit -m "first push"
-6. push heroku master
-7. Now you need to visit heroku.com and login
+4. bundle install
+5. git add .
+6. git commit -m "first push"
+7. push heroku master
+8. Now you need to visit heroku.com and login
    There under apps/your-in-step-3-created-app you will find the Add-ons section
    Here you will see something like Heroku Postgres :: NAME 
    in my case Heroku Postgres :: Silver
@@ -17,10 +17,10 @@
    Change ENV["HEROKU_POSTGRESQL_SILVER_URL"] ? Logger.new(STDOUT) to
    ENV["HEROKU_POSTGRESQL_"THE-NAME-YOU-COPYED-FROM-HEROKU.COM"_URL"] ? 
    Logger.new(STDOUT) : and save the file
-8. git add .
-9. git commit -m "new production.rb"
-10.push heroku master
-11.heroku run RAILS_ENV="production" rake db:migrate
+9. git add .
+10. git commit -m "new production.rb"
+11.push heroku master
+12.heroku run RAILS_ENV="production" rake db:migrate
 
 
 = Instiki
