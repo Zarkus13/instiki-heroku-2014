@@ -10,27 +10,6 @@ $:.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'plugins', 'rexml',
 require File.join(File.dirname(__FILE__), 'boot')
 
 require 'active_support/secure_random'
-# monkey patch for 2.0. Will ignore vendor gems.
-if RUBY_VERSION >= "2.0.0"
-  module Gem
-    def self.source_index
-      sources
-    end
-
-    def self.cache
-      sources
-    end
-
-    SourceIndex = Specification
-
-    class SourceList
-      # If you want vendor gems, this is where to start writing code.
-      def search( *args ); []; end
-      def each( &block ); end
-      include Enumerable
-    end
-  end
-end
 
 Rails::Initializer.run do |config|
 
