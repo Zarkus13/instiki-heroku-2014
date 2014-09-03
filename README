@@ -8,7 +8,8 @@ Instiki on Heroku via command line:
 6. push heroku master
 7. Now you need to visit heroku.com and login
    There under apps/your-in-step-3-created-app you will find the Add-ons section
-   Here you will see something like Heroku Postgres :: NAME in my case Heroku Postgres :: Silver
+   Here you will see something like Heroku Postgres :: NAME 
+   in my case Heroku Postgres :: Silver
    You need to copy the name after Heroku Postgres :: ,
    in my case Silver 
    Now on your local directory (the one we pulled in step 1) change to 
