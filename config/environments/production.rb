@@ -9,7 +9,7 @@ config.cache_classes = true
 # This rotates the log file, keeping 25 files, of 1MB each.
 
 # Log to STDOUT if we are running on heroku
-config.action_controller.logger = ENV["HEROKU_POSTGRESQL_SILVER_URL"] ? Logger.new(STDOUT) : 
+config.action_controller.logger = ENV["HEROKU_POSTGRESQL_NAVY_URL"] ? Logger.new(STDOUT) : 
                                     Logger.new(Rails.root.join('log', "#{RAILS_ENV}.log"), 25, 1024000)
 
 
